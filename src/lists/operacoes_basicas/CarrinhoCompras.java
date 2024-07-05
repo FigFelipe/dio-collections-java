@@ -28,7 +28,7 @@ public class CarrinhoCompras {
         // Criando uma lista exclusiva de itens para remocao
         List<Item> itensParaRemover = new ArrayList<>();
 
-        // Se a lista 'itensParaRemover' não for vazia, entao
+        // Se a lista 'item' não for vazia, entao
         if(!itemList.isEmpty()){
 
             // Percorrer os itens da lista
@@ -37,10 +37,13 @@ public class CarrinhoCompras {
                 // Se a lista encontrar o objeto com o nome informado
                 if(i.getNome().equalsIgnoreCase(nome)){
 
-                    // Entao adiciona o item para a lista 'itensParaRemover'
+                    // Entao adiciona o item para a outra lista 'itensParaRemover'
                     itensParaRemover.add(i);
                 }
             }
+
+            // É informado para remoção a lista itensParaRemover
+            itemList.removeAll(itensParaRemover);
         }
 
     }
@@ -71,7 +74,10 @@ public class CarrinhoCompras {
 
     public void exibirItens(){
 
+        // Verificar se a lista 'item' não está vazia
         if(!itemList.isEmpty()){
+
+            // O conteúdo da lista é impressa através do metodo ToString() da Classe Item
             System.out.println(this.itemList);
         } else {
             System.out.println("A lista está vazia");
