@@ -1,4 +1,4 @@
-package lists.operacoes_basicas;
+package list_interface.operacoes_basicas;
 
 public class Item {
 

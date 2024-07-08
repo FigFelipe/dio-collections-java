@@ -1,4 +1,4 @@
-package lists.ordenacao;
+package list_interface.ordenacao;
 
 public class Pessoa implements Comparable<Pessoa> {
 

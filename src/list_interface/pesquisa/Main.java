@@ -1,4 +1,4 @@
-package lists.pesquisa;
+package list_interface.pesquisa;
 
 public class Main {
     public static void main(String[] args) {

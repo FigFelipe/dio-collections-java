@@ -1,4 +1,4 @@
-package lists.pesquisa;
+package list_interface.pesquisa;
 
 import java.util.ArrayList;
 import java.util.List;
