@@ -13,6 +13,8 @@ public class AgendaContatos {
 
     public void adicionarContato(String nome, int numero) {
         contatosSet.add(new Contato(nome, numero));
+
+        System.out.println("Contato '" + nome + "' de número '" + numero + "' foi adicionado.");
     }
 
     public void exibirContatos() {
